@@ -6,7 +6,7 @@ from streamlit_chat import message
 
 # this is the chat interface
 
-st.header("LangChain Documentation Chat Bot 🦜🔗")
+st.header("LangChain Documentation Chatbot 🦜🔗")
 
 
 password_secret = st.secrets.get("PASSWORD")
