@@ -32,7 +32,7 @@ def run_llm(query: str, chat_history: List[tuple[str, Any]] = []) -> Any:
     docsearch = Pinecone.from_existing_index(
         index_name="langchain-information", embedding=embeddings
     )
-    chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key=openai_api_key)
+    chat = OpenAI(verbose=True, temperature=0, openai_api_key=openai_api_key, model_name= "gpt-4")
 
     qa = ConversationalRetrievalChain.from_llm(
         llm=chat, retriever=docsearch.as_retriever(), return_source_documents=True
