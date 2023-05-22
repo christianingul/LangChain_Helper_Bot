@@ -40,6 +40,6 @@ def run_llm(query: str, chat_history: List[tuple[str, Any]] = []) -> Any:
     return qa({"question": query, "chat_history": chat_history})
 
 
-if __name__ == "__main__":
-    result = run_llm(query="What is RetrievalQA?")
-    print(result)
+#if __name__ == "__main__":
+    #result = run_llm(query="What is RetrievalQA?")
+    #print(result)
