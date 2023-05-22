@@ -1,6 +1,6 @@
 from typing import Set
 import streamlit as st
-from backend.core import run_llm
+from core import run_llm
 from streamlit_chat import message
 
 st.header("LangChain Documentation Helper Bot")
